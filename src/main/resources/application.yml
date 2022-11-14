@@ -18,6 +18,13 @@ spring:
   config:
     activate:
       on-profile: dev
+  data:
+    dynamodb:
+      entity2ddl:
+        auto: create
+        gsiProjectionType: ALL
+        readCapacity: 10
+        writeCapacity: 1
 
 server:
   port: 8081
